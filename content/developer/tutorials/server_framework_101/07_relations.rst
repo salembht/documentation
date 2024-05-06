@@ -2,7 +2,7 @@
 Chapter 7: Relations Between Models
 ===================================
 
-The :doc:`previous chapter <06_basicviews>` covered the creation of custom
+The previous chapter <06_basicviews> covered the creation of custom
 views for a model containing basic fields. However, in any real business scenario we need more than
 one model. Moreover, links between models are necessary. One can easily imagine one model containing
 the customers and another one containing the list of users. You might need to refer to a customer
@@ -76,10 +76,7 @@ In practice a many2one can be seen as a dropdown list in a form view.
       and search views
 
     This exercise is a good recap of the previous chapters: you need to create a
-    :doc:`model <03_basicmodel>`, set the
-    :doc:`model <04_securityintro>`, add an
-    :doc:`action and a menu <05_firstui>`, and
-    :doc:`create a view <06_basicviews>`.
+    model, set the model , add an action and a menu, and create a view.
 
     Tip: do not forget to import any new Python files in ``__init__.py``, add new data files in
     ``__manifest.py__``  or add the access rights ;-)

@@ -123,7 +123,7 @@ and its
 Action Type
 ===========
 
-In :doc:`05_firstui`, we created an action that was linked to a menu. You
+In 05_firstui, we created an action that was linked to a menu. You
 may be wondering if it is possible to link an action to a button. Good news, it is! One way to do it
 is:
 
