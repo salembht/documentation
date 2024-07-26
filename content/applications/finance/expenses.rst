@@ -84,105 +84,56 @@ Set a tax on each product in the :guilabel:`Vendor Taxes` and :guilabel:`Custome
 applicable. It is considered good practice to use a tax that is configured with :ref:`Tax Included
 in Price <taxes/included-in-price>`. Taxes will be automatically configured if this is set.
 
-Re-invoice expenses to customers
-================================
+.. _expenses/reimburse:
 
-If expenses are tracked on customer projects, expenses can be automatically charged back to the
-customer. This is done by creating an expense, referencing the :abbr:`SO (Sales Order)` the expense
-should be added to, and then creating the expense report. Next, managers approve the expense report,
-and the accounting department posts the journal entries. Finally, once the expense report is posted
-to a journal, the expenses appear on the :abbr:`SO (Sales Order)` that was referenced. The sales
-order can then be invoiced, thus invoicing the customer for the expense.
+Reimburse employees
+===================
 
-Setup
------
+After an expense report is posted to an accounting journal, the next step is to reimburse the
+employee. To view all the expense reports to pay, go to :menuselection:`Expenses app --> Expense
+Reports --> Reports To Pay`.
 
-First, specify the invoicing policy for each expense category. Go to :menuselection:`Expenses app
---> Configuration --> Expense Categories`. Click on the expense category to open the expense
-category form. Under the :guilabel:`Invoicing` section, click the radio button next to the desired
-selection for :guilabel:`Re-Invoicing Expenses`. Options are :guilabel:`None`, :guilabel:`At cost`,
-and :guilabel:`Sales price`.
-
-:guilabel:`Re-Invoicing Expenses`:
-
-- :guilabel:`None`: Expense category will not be re-invoiced.
-- :guilabel:`At cost`: Expense category will invoice expenses at their real cost.
-- :guilabel:`At sales price`: Expense category will invoice the price set on the sale order.
-
-Create an expense
------------------
-
-First, when :doc:`creating a new expense <expenses/log_expenses>`, the correct information needs to
-be entered in order to re-invoice a customer. Select the *sales order* the expense will appear on in
-the :guilabel:`Customer to Reinvoice` section, from the drop-down menu. Next, select the
-:guilabel:`Analytic Account` the expense will be posted to. After the expense(s) are created, the
-expense report needs to be :doc:`created <expenses/expense_reports>` and :ref:`submitted
-<expenses/submit>` as usual.
-
-.. image:: expenses/reinvoice-expense.png
+.. image:: expenses/reports-to-pay.png
    :align: center
-   :alt: Ensure the customer to be invoiced is called out on the expense.
+   :alt: View reports to pay by clicking on expense reports, then reports to pay.
 
-.. important::
-   Selecting a :guilabel:`Customer to Reinvoice` when creating an expense is critical, since this is
-   what causes the expenses to be automatically invoiced after an expense report is approved.
+Just like approvals and posting, expense reports can be paid in two ways (individually or several at
+once). To pay multiple expense reports at once, remain in the list view. First, select the reports
+to pay by ticking the checkbox next to each report, or tick the checkbox next to
+:guilabel:`Employee` to select all the reports in the list. Next, click :guilabel:`Register
+Payment`.
 
-   The :guilabel:`Customer to Reinvoice` field can be modified *until an expense report is*
-   **approved**, then the field is no longer able to be modified.
-
-Validate and post expenses
---------------------------
-
-Only employees with permissions (typically, managers or supervisors) can :doc:`approve expenses
-<expenses/approve_expenses>`. Before approving an expense report, ensure the :guilabel:`Analytic
-Distribution` is set on every expense line of a report. If an :guilabel:`Analytic Distribution` is
-missing, assign the correct accounts from the drop-down menu, and click :guilabel:`Approve` or
-:guilabel:`Refuse`.
-
-The accounting department is typically responsible for :doc:`posting journal entries
-<expenses/post_expenses>`. Once an expense report is approved, it can then be posted. The :abbr:`SO
-(Sales Order)` is **only** updated *after* the journal entries are posted. Once the journal entries
-are posted, the expenses now appear on the referenced :abbr:`SO (Sales Order)`.
-
-Invoice expenses
-----------------
-
-Once the :abbr:`SO (Sales Order)` has been updated, it is time to invoice the customer. After the
-expense report has been approved and the journal entries have been posted, click the
-:guilabel:`Sales Orders` smart button to open the :abbr:`SO (Sales Order)`. The expenses to be
-re-invoiced are now on the :abbr:`SO (Sales Order)`.
-
-.. image:: expenses/sales-order.png
+.. image:: expenses/register-payment.png
    :align: center
-   :alt: After the expense report is posted to the journal entry, the sales order can be called up
-         by clicking on the sales order number.
+   :alt: Post multiple reports by selecting them, clicking the gear, and then post the entries.
 
-.. note::
-   More than one :abbr:`SO (Sales Order)` can be referenced on an expense report. If more than one
-   :abbr:`SO (Sales Order)` is referenced, the :guilabel:`Sales Orders` smart button will list the
-   number of :abbr:`SO (Sales Order)`'s. If multiple :abbr:`SO (Sales Order)`'s are listed, the
-   :guilabel:`Sales Orders` smart button opens a list view of all the :abbr:`SO (Sales Order)`'s on
-   the expense report. Click on a :abbr:`SO (Sales Order)` to open the individual :abbr:`SO (Sales
-   Order)`.
+To pay an individual report, click on a report to go to a detailed view of that report. Click
+:guilabel:`Register Payment` to pay the employee.
 
-The expenses are listed in the :abbr:`SO (Sales Order)` :guilabel:`Order Lines` tab.
+A :guilabel:`Register Payment` pop-up appears, and the :guilabel:`Journal`, :guilabel:`Payment
+Method`, and :guilabel:`Payment Date` can be modified, if needed. When the selections are correct,
+click :guilabel:`Create Payment` to send the payment to the employee.
 
-.. image:: expenses/so-details.png
+To pay an individual report, click on a report in the list view to go to a detailed view of that
+report. Click :guilabel:`Register Payment` to pay the employee. A :guilabel:`Register Payment`
+pop-up appears, but when paying an individual expense report instead of several at once, more
+options appear in the pop-up. In addition to the :guilabel:`Journal`, :guilabel:`Payment Method`,
+and :guilabel:`Payment Date` fields, a :guilabel:`Recipient Bank Account`, :guilabel:`Amount`, and
+:guilabel:`Memo` field appear. Select the employee's bank account from the drop-down menu to
+directly deposit the payment to their account. When all other selections are correct, click
+:guilabel:`Create Payment` to send the payment to the employee.
+
+.. image:: expenses/two-payment-posting-options.png
    :align: center
-   :alt: See the expenses listed on the sales order after clicking into it.
-
-Next, click :guilabel:`Create Invoice`, and select if the invoice is for a :guilabel:`Regular
-invoice`, a :guilabel:`Down payment (percentage)`, or a :guilabel:`Down payment (fixed amount)` by
-clicking the radio button next to it. Then, click :guilabel:`Create Invoice`. The customer has now
-been invoiced for the expenses.
-
+   :alt: Different options appear when registering an individual expense report versus multiple
+         expense reports at once.
 
 .. seealso::
    - :doc:`expenses/log_expenses`
    - :doc:`expenses/expense_reports`
    - :doc:`expenses/approve_expenses`
    - :doc:`expenses/post_expenses`
-   - :doc:`expenses/reimburse`
+   - :doc:`expenses/reinvoice_expenses`
 
 .. toctree::
    :titlesonly:
@@ -191,4 +142,4 @@ been invoiced for the expenses.
    expenses/expense_reports
    expenses/approve_expenses
    expenses/post_expenses
-   expenses/reimburse
+   expenses/reinvoice_expenses
