@@ -29,7 +29,7 @@ developer/tutorials/server_framework_101/03_basicmodel.rst developer/tutorials/s
 developer/tutorials/server_framework_101/04_securityintro.rst developer/tutorials/server_framework_101.rst
 developer/tutorials/server_framework_101/05_firstui.rst developer/tutorials/server_framework_101.rst
 developer/tutorials/server_framework_101/06_basicviews.rst developer/tutorials/server_framework_101.rst
-#developer/tutorials/server_framework_101/07_relations.rst developer/tutorials/server_framework_101.rst
+developer/tutorials/server_framework_101/07_relations.rst developer/tutorials/server_framework_101.rst
 #developer/tutorials/server_framework_101/08_compute_onchange.rst developer/tutorials/server_framework_101.rst
 #developer/tutorials/server_framework_101/09_actions.rst developer/tutorials/server_framework_101.rst
 #developer/tutorials/server_framework_101/10_constraints.rst developer/tutorials/server_framework_101.rst

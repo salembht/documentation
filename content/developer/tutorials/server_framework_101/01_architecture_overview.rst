@@ -69,4 +69,4 @@ simple directory an Odoo module. We'll get back to it in the next chapter.
 
 ----
 
-Ready to start? Let's now :doc:`lay the foundations of our first Odoo app <02_lay_the_foundations>`!
+Ready to start? Let's now :doc:`lay the foundations <02_lay_the_foundations>` of our first Odoo app!

@@ -410,8 +410,8 @@ For a start, the list view could use more fields than just the name.
    #. After restarting the server to load the new data, refresh the browser to see the result.
 
    .. tip::
-      Rely on the reference documentation for :ref:`field components
-      <reference/view_architectures/list/field>` in list views.
+      Rely on the reference documentation for :ref:`the field component in list views
+      <reference/view_architectures/list/field>`.
 
    The final result should look like this:
 
@@ -484,7 +484,7 @@ Form view
 
    .. tip::
       - Rely on the reference documentation for :ref:`structural components
-        <reference/view_architectures/form/structural>` and :ref:`field components
+        <reference/view_architectures/form/structural>` and :ref:`the field component
         <reference/view_architectures/form/field>` in form views.
       - Add the :option:`--dev xml <odoo-bin --dev>` argument to the server start-up command to
         instruct the server to load records defined in XML from your filesystem rather than from the
@@ -704,4 +704,7 @@ Let's enhance the search capabilities.
 
 ----
 
-.. todo: add incentive for chapter 4
+We now have a shiny UI to manage real estate properties, but our information model is still quite
+basic. We have a limited set of property types and a few building specifications, but that's not
+enough for a good real estate application. In the next chapter, we'll :doc:`connect properties to
+new models <04_relational_fields>` to transform our basic real estate app into a feature-rich tool.

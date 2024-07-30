@@ -1,5 +1,5 @@
 ======================
-Chapter X: Inheritance
+Chapter 8: Inheritance
 ======================
 
 tmp

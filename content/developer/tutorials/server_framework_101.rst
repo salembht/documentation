@@ -38,10 +38,9 @@ Ready? Let's get started!
 - :doc:`server_framework_101/02_lay_the_foundations`
 - :doc:`server_framework_101/03_build_user_interface`
 - :doc:`server_framework_101/04_relational_fields`
-- :doc:`server_framework_101/05_advanced_views`
-- :doc:`server_framework_101/0x_business_logic`
-- :doc:`server_framework_101/0x_security`
-- :doc:`server_framework_101/0x_advanced_views`
-- :doc:`server_framework_101/0x_unit_testing`
-- :doc:`server_framework_101/0x_inheritance`
-- :doc:`server_framework_101/0x_portal`
+- :doc:`server_framework_101/05_business_logic`
+- :doc:`server_framework_101/06_security`
+- :doc:`server_framework_101/07_advanced_views`
+- :doc:`server_framework_101/08_inheritance`
+- :doc:`server_framework_101/09_portal`
+- :doc:`server_framework_101/10_unit_testing`

@@ -1,8 +1,8 @@
-========================================
-Chapter 8: Computed Fields And Onchanges
-========================================
+==================================
+Old: Computed Fields And Onchanges
+==================================
 
-The :doc:`relations between models <07_relations>` are a key component of
+The `relations between models <07_relations>` are a key component of
 any Odoo module. They are necessary for the modelization of any business case. However, we may want
 links between the fields within a given model. Sometimes the value of one field is determined from
 the values of other fields and other times we want to help the user with data entry.

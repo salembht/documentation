@@ -1,5 +1,5 @@
 =================
-Chapter X: Portal
+Chapter 9: Portal
 =================
 
 Controllers + QWeb

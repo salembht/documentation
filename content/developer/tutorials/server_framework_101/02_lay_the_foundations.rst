@@ -544,7 +544,7 @@ began being logged at server start-up after creating the model:
       - `group_id`: The record ID of `base.group_system`
       - `perm_read`, `perm_write`, `perm_create`, and `perm_unlink`: `1`
 
-   .. note::
+   .. tip::
       In Odoo, modules and models are automatically given an XML ID computed by prefixing their name
       with `module_` and `model_` respectively.
 
@@ -569,5 +569,5 @@ After restarting the server, the warning should no longer appear.
 
 ----
 
-In the next chapter, we'll :doc:`create user interface elements to interact with the property model
-<03_build_user_interface>`.
+In the next chapter, we'll :doc:`create user interface elements <03_build_user_interface>` to
+interact with the property model.

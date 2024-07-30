@@ -68,7 +68,13 @@ GitHub.
    **For Odoo employees only:**
 
    #. Make sure to read very carefully :ref:`contributing/development/first-contribution`. In
-      particular, your branch name must follow our conventions.
+      particular:
+
+      - Your code must follow the :doc:`guidelines </contributing/development/coding_guidelines>`.
+      - Your commit messages must be :doc:`correctly written
+        </contributing/development/git_guidelines>`.
+      - Your branch name must follow our conventions.
+
    #. Once you have pushed your first change to the shared fork on **odoo-dev**, create a **draft**
       :abbr:`PR (Pull Request)` with your quadrigram in the title. This will enable you to share
       your upcoming work and receive feedback from your coaches. To ensure a continuous feedback

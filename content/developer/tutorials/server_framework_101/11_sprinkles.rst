@@ -1,6 +1,6 @@
-=============================
-Chapter 11: Add The Sprinkles
-=============================
+======================
+Old: Add The Sprinkles
+======================
 
 Our real estate module now makes sense from a business perspective. We created
 specific views <06_basicviews>, added several
