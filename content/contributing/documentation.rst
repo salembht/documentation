@@ -8,7 +8,6 @@ Documentation
    :titlesonly:
 
    documentation/content_guidelines
-   documentation/rst_cheat_sheet
    documentation/rst_guidelines
 
 This introductory guide will help you acquire the tools and knowledge you need to write
@@ -18,7 +17,7 @@ scratch.
 .. seealso::
    :doc:`Discover other ways to contribute to Odoo <../contributing>`
 
-Read the :ref:`introduction to the reStructuredText language <contributing/documentation/rst-intro>`
+Read the :ref:`introduction to the reStructuredText language <contributing-rst-intro>`
 if you are not familiar with it. Then, you have two courses of action to start contributing to the
 documentation, depending on whether you want to propose minor changes to existing content or you
 instead want to work on significant changes to new and existing content.
@@ -26,12 +25,12 @@ instead want to work on significant changes to new and existing content.
 - **For minor changes**, for example, adding a paragraph or fixing a typo, we recommend **using the
   GitHub interface**. This is the easiest and fastest way to submit your changes, and it is suitable
   for non-technical people. Jump directly to the
-  :ref:`contributing/documentation/first-contribution` section to get started.
+  :ref:`contributing-documentation-first-contribution` section to get started.
 - **For more complex changes**, it is necessary to **use Git** and work from a local copy of the
-  documentation. Follow the instructions in the :ref:`contributing/documentation/setup` section to
+  documentation. Follow the instructions in the :ref:`contributing-documentation-setup` section to
   first prepare your environment.
 
-.. _contributing/documentation/rst-intro:
+.. _contributing-rst-intro:
 
 reStructuredText (RST)
 ======================
@@ -42,9 +41,8 @@ with markup, which allows including headings, images, notes, and so on. This mig
 abstract, but there is no need to worry; :abbr:`RST (reStructuredText)` is not hard to learn,
 especially if you intend to make minor changes to the content.
 
-If you need to learn about a specific markup, head over to our :doc:`cheat sheet for RST
-<documentation/rst_cheat_sheet>`; it contains all the information you should ever need for the
-documentation of Odoo.
+If you need to learn about a specific markup, head over to our :doc:`documentation/rst_guidelines`;
+they contain all the information you should ever need for the Odoo documentation.
 
 .. important::
    We kindly ask you to observe a set of :doc:`content <documentation/content_guidelines>` and
@@ -54,17 +52,16 @@ documentation of Odoo.
 
 .. seealso::
    - :doc:`documentation/content_guidelines`
-   - :doc:`documentation/rst_cheat_sheet`
    - :doc:`documentation/rst_guidelines`
 
-.. _contributing/documentation/setup:
+.. _contributing-documentation-setup:
 
 Environment setup
 =================
 
 The instructions below help you prepare your environment for making local changes to the
 documentation and then push them to GitHub. Skip this section and go to
-:ref:`contributing/documentation/first-contribution` if you have already completed this step or want
+:ref:`contributing-documentation-first-contribution` if you have already completed this step or want
 to make changes from the GitHub interface.
 
 #. .. include:: create_github_account.rst
@@ -150,9 +147,9 @@ to make changes from the GitHub interface.
 
 #. `Install pngquant <https://pngquant.org/>`_.
 #. That's it! You are ready to :ref:`make your first contribution
-   <contributing/documentation/first-contribution>` with Git.
+   <contributing-documentation-first-contribution>` with Git.
 
-.. _contributing/documentation/first-contribution:
+.. _contributing-documentation-first-contribution:
 
 Make your first contribution
 ============================
@@ -173,7 +170,7 @@ Make your first contribution
             :scale: 60%
 
       #. Make the desired changes while taking care of following the :doc:`content
-         <documentation/content_guidelines>` and :doc:`RST <documentation/rst_guidelines>`
+         <documentation/content_guidelines>` and :doc:`rst <documentation/rst_guidelines>`
          guidelines.
 
          .. tip::
