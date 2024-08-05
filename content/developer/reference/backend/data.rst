@@ -173,11 +173,25 @@ values).
 
 .. code-block:: xml
 
+<<<<<<< 16.0
     <odoo>
         <data noupdate="1">
             <record name="partner_1" model="res.partner">
                 <field name="name">Odude</field>
             </record>
+||||||| bfc47b6c2c2bcec103cf5ba1314dea46efa80620
+  <odoo>
+      <data noupdate="1">
+          <record name="partner_1" model="res.partner">
+              <field name="name">Odude</field>
+          </record>
+=======
+  <odoo>
+      <data noupdate="1">
+          <record id="partner_1" model="res.partner">
+              <field name="name">Odude</field>
+          </record>
+>>>>>>> fb81a5f2359bf75a9c44057827748f1e53f6507d
 
             <function model="res.partner" name="send_inscription_notice"
                 eval="[[ref('partner_1'), ref('partner_2')]]"/>
