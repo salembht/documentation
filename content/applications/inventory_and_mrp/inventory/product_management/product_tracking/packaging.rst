@@ -140,4 +140,50 @@ used for the product. The chosen packaging is displayed on the :abbr:`SO (Sales 
       :align: center
       :alt: Assign packagings on the Sales Order Line.
 
+.. _inventory/product_management/packaging-route:
+
+Routes for packaging
+====================
+
+When receiving packagings, by default, they follow the warehouse's :doc:`configured reception route
+<../../shipping_receiving/daily_operations/shipments_deliveries>`. To **optionally** set up a
+packaging-specific route, go to :menuselection:`Inventory app --> Configuration --> Routes`.
+
+.. important::
+   The *Product Packagings*, *Storage Locations*, and *Multi-Step Routes* features (found by going
+   to :menuselection:`Inventory app --> Configuration --> Settings`) **must** be activated, and
+   saved.
+
+.. seealso::
+   :doc:`../../warehouses_storage/inventory_management/use_routes`
+
+Create route
+------------
+
+On the :guilabel:`Routes` page, click :guilabel:`New`, or select a route that is **not** for a
+warehouse. Next, in the :guilabel:`Applicable on` section, tick the :guilabel:`Packagings` checkbox.
+
+.. figure:: packaging/route.png
+   :align: center
+   :alt: Create route for a packaging.
+
+   Route with "Packagings" selected, with "Products" and "Warehouses" not selected.
+
+Apply route on packaging
+------------------------
+
+Then, to apply the route, go to :menuselection:`Inventory app --> Products --> Products`, and
+select the product that uses packaging.
+
+In the product form, switch to the :guilabel:`Inventory` tab. In the :guilabel:`Packaging` section
+that contains :ref:`configured packagings <inventory/product_management/packaging-setup>`, click the
+:icon:`oi-settings-adjust` :guilabel:`(settings)` icon. Tick the :guilabel:`Routes` checkbox to make
+the column visible in the :guilabel:`Packaging` table.
+
+In the :guilabel:`Routes` field, select the packaging-specific route. Repeat these steps for all
+packaging intended to use the route.
+
+.. image:: packaging/apply-route.png
+   :align: center
+   :alt: Set route on a packaging.
 
