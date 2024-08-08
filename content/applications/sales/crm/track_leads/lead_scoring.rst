@@ -2,7 +2,7 @@
 Assign leads with predictive lead scoring
 =========================================
 
-The Odoo *CRM* app can automatically assign leads/opportunities to sales teams and salespeople. A
+The Odoo **CRM** app can automatically assign leads/opportunities to sales teams and salespeople. A
 standard practice is to assign leads based on the probability of winning each lead. Companies can
 prioritize the leads that are more likely to result in successful deals by quickly assigning them
 to the appropriate salespeople.
@@ -13,7 +13,7 @@ lead scoring*.
 Predictive lead scoring
 =======================
 
-Predictive lead scoring is a machine-learning model that uses historical data from Odoo *CRM* to
+Predictive lead scoring is a machine-learning model that uses historical data from Odoo **CRM** to
 score open leads/opportunities.
 
 As a company processes opportunities through the CRM pipeline, Odoo collects data on which
@@ -30,6 +30,20 @@ Specifically, Odoo's predictive lead scoring uses the *naive Bayes* probability 
    P(A | B) = \frac{P(A) \times P(B | A)}{P(B)}
    \end{equation}
 
+Breaking down the equation:
+
+- P(A|B) = The probability of a successful lead *in this case*
+- P(A) = The overall probability of a lead being successful regardless of the conditions
+- P(B|A) = The probability of this being the case given a lead is successful
+- P(B) = The probability of this being the case
+
+The term *in this case* refers to the variables that can affect a lead being successful in Odoo.
+This can include variables such as the assigned Salesperson, the source of the lead, the language of
+the lead, and other historical and demographic data.
+
+Which variables are considered in this calculation can be :ref:`configured
+<lead_scoring/configuration>` to tailor the calculation to each business's needs.
+
 The probability of success of each opportunity is displayed on the opportunity form, and it updates
 automatically as the opportunity progresses through the CRM pipeline.
 
@@ -40,13 +54,15 @@ automatically as the opportunity progresses through the CRM pipeline.
 When an opportunity moves to the next stage, its probability of success automatically increases
 according to the predictive lead scoring algorithm.
 
+.. _lead_scoring/configuration:
+
 Configuration
 -------------
 
-Predictive lead scoring is always active in Odoo *CRM*. However, the variables used to calculate the
-probability of success can be customized in the settings.
+Predictive lead scoring is always active in Odoo **CRM**. However, the variables used to calculate
+the probability of success can be customized in the settings.
 
-To customize the variables used by predictive lead scoring, go to :menuselection:`CRM -->
+To customize the variables used by predictive lead scoring, go to :menuselection:`CRM app -->
 Configuration --> Settings`. Under :guilabel:`Predictive Lead Scoring`, click on the
 :guilabel:`Update Probabilities` button.
 
@@ -85,11 +101,12 @@ An opportunity's probability of success can be changed manually on the opportuni
 the probability number to edit it.
 
 .. important::
-   Manually changing the probability removes the automatic probability updates for that
-   opportunity. The probability will no longer update automatically as the opportunity moves
-   through each stage of the pipeline.
+   Manually changing the probability removes the automatic probability updates for that opportunity.
+   The probability will no longer update automatically as the opportunity moves through each stage
+   of the pipeline.
 
-To reactivate automatic probability, click on the gear icon next to the probability percentage.
+To reactivate automatic probability, click on the :icon:`fa-cog` Actions menu icon next to the
+probability percentage.
 
 .. image:: lead_scoring/probability-gear-icon.png
    :align: center
@@ -98,14 +115,14 @@ To reactivate automatic probability, click on the gear icon next to the probabil
 Assign leads based on probability
 =================================
 
-Odoo *CRM* can assign leads/opportunities to sales teams and salespeople based on specified rules.
+Odoo **CRM** can assign leads/opportunities to sales teams and salespeople based on specified rules.
 Create assignment rules based on the leads' probability of success to prioritize those that are
 more likely to result in deals.
 
 Configure rule-based assignment
 -------------------------------
 
-To activate *rule-based assignment*, navigate to :menuselection:`CRM --> Configuration -->
+To activate *rule-based assignment*, navigate to :menuselection:`CRM app --> Configuration -->
 Settings`, and activate :guilabel:`Rule-Based Assignment`.
 
 The rule-based assignment feature can be set to run :guilabel:`Manually`, meaning an Odoo user must
@@ -129,7 +146,7 @@ Configure assignment rules
 
 Next, configure the *assignment rules* for each sales team and/or salesperson. These rules
 determine which leads Odoo assigns to which people. To get started, navigate to :menuselection:`CRM
---> Configuration --> Sales Teams`, and select a sales team.
+app --> Configuration --> Sales Teams`, and select a sales team.
 
 On the sales team configuration form, under :guilabel:`Assignment Rules`, click on :guilabel:`Edit
 Domain` to configure the rules that Odoo uses to determine lead assignment for this sales team. The
