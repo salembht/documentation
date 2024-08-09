@@ -2,15 +2,15 @@
 Requests for quotation
 ======================
 
-.. _inventory/purchase/manage_deals/request_for_quotation:
+.. _purchase/manage_deals/rfq:
 
 .. |PO| replace:: :abbr:`PO (Purchase Order)`
 .. |POs| replace:: :abbr:`POs (Purchase Orders)`
 .. |RFQ| replace:: :abbr:`RFQ (Request for Quotation)`
 .. |RFQs| replace:: :abbr:`RFQs (Requests for Quotation)`
 
-Odoo’s requests for quotation (RFQs) feature in the **Purchase** app standardizes
-ordering products from multiple vendors with varying prices and delivery times.
+Odoo's requests for quotation (RFQs) feature in the **Purchase** app standardizes ordering products
+from multiple vendors with varying prices and delivery times.
 
 |RFQs| are documents companies send to vendors requesting product pricing. In Odoo, once the vendor
 approves the |RFQ|, the purchase order (PO) is confirmed to align on lead times and pricing.
@@ -27,7 +27,7 @@ new one by selecting :guilabel:`New`. Doing so opens the product form, where var
 purchasing data can be configured.
 
 To configure purchasable products, tick the :guilabel:`Can be purchased` checkbox, under the product
-name. Then, go to the the :guilabel:`Inventory` tab, and enable the :guilabel:`Buy` route.
+name. Then, go to the :guilabel:`Inventory` tab, and enable the :guilabel:`Buy` route.
 
 .. image:: rfq/product-vendor-pricelist-config.png
    :align: center
@@ -63,11 +63,11 @@ for the company.
 
 To get started, navigate to :menuselection:`Purchase app --> Orders --> Requests for Quotation`.
 
-The :guilabel:`Requests for Quotation` dashboard displays an overview of the company’s |RFQs|,
+The :guilabel:`Requests for Quotation` dashboard displays an overview of the company's |RFQs|,
 |POs|, and their status. The top of the screen breaks down all |RFQs| in the company, as well as
 individual ones (where the user is the buyer) with a summary of their status.
 
-The top-right corner also provides a quick report of the company’s recent purchases by total value,
+The top-right corner also provides a quick report of the company's recent purchases by total value,
 lead times, and number of |RFQs| sent.
 
 Additionally, the dashboard includes buttons for:
@@ -76,12 +76,14 @@ Additionally, the dashboard includes buttons for:
 :guilabel:`Waiting`: |RFQs| that have been sent by email, and are waiting on vendor confirmation.
 :guilabel:`Late`: |RFQs| or |POs| where the :guilabel:`Order Deadline` has passed.
 
-.. image:: rfq/RFQ-dashboard.png
+.. image:: rfq/rfq-dashboard.png
    :align: center
-   :alt: |RFQ| dashboard with orders and order statuses.
+   :alt: RFQ dashboard with orders and order statuses.
 
 In addition to various view options, the :guilabel:`Requests for Quotation` dashboard provides
 :guilabel:`Filters` and :guilabel:`Group By` options, accessible via the search bar drop-down menu.
+.. seealso::
+   :doc:`../../../essentials/search`
 
 Create new |RFQ|
 ----------------
@@ -136,9 +138,9 @@ item.
 here, products can be added to the cart.
 
 .. note::
-  To make adjustments to products and prices, access the product form by clicking the
-  :icon:`oi-arrow-right` :guilabel:`(right arrow)` icon that becomes available upon hovering over
-  the :guilabel:`Product` name.
+   To make adjustments to products and prices, access the product form by clicking the
+   :icon:`oi-arrow-right` :guilabel:`(right arrow)` icon that becomes available upon hovering over
+   the :guilabel:`Product` name.
 
 Send |RFQ|
 ----------
@@ -164,8 +166,8 @@ Clicking :guilabel:`Confirm Order` directly transforms the |RFQ| into an active 
 
 Once an |RFQ| is confirmed, it creates a |PO|.
 
-On the new |PO|, the :guilabel:`Order Deadline` field changes to :guilabel:`Confirmation Date`, which
-displays the date and time the user confirmed the order.
+On the new |PO|, the :guilabel:`Order Deadline` field changes to :guilabel:`Confirmation Date`,
+which displays the date and time the user confirmed the order.
 
 Depending on the user's chosen configuration in the **Purchase** app settings, a *vendor bill* is
 created once products have been ordered or received. For more information, refer to the
