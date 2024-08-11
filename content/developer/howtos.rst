@@ -7,7 +7,7 @@ How-to guides
 
 .. toctree::
    howtos/scss_tips
-   howtos/javascript_field
+   howtos/javascript_field 
    howtos/javascript_view
    howtos/javascript_client_action
    howtos/standalone_owl_application
